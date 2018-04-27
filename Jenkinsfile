@@ -9,7 +9,7 @@ pipeline {
         sh 'ls -la'
         
         // java info
-        echo $JAVA_HOME
+        echo '$JAVA_HOME'
         sh 'java -version'
       }
     }
