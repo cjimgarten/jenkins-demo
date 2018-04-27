@@ -11,12 +11,14 @@ pipeline {
       }
     }
     stage('Stage 2') {
-      
-      // java info
-      sh 'java -version'
-      
-      // python3 info
-      sh 'python3 -V'
+      steps {
+        
+        // java info
+        sh 'java -version'
+        
+        // python3 info
+        sh 'python3 -V' 
+      }
     }
   }
 }
