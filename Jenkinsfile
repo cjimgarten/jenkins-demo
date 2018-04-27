@@ -6,12 +6,17 @@ pipeline {
         
         // random stuff
         echo 'Stage 1'
+        sh 'pwd'
         sh 'ls -la'
-        
-        // java info
-        echo '$JAVA_HOME'
-        sh 'java -version'
       }
+    }
+    stage('Stage 2') {
+      
+      // java info
+      sh 'java -version'
+      
+      // python3 info
+      sh 'python3 -V'
     }
   }
 }
